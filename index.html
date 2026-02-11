@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programmer Shop V12 PRO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Home Box -->
+<div class="box" id="homeBox">
+<h1>Programmer Shop V12 PRO</h1>
+<p>متجر للبيع أدوات لمبرمجين وتقديم خدمات سريعة ومثوقة</p>
+<button onclick="showLogin()">تسجيل الدخول</button>
+<button onclick="showRegister()">إنشاء حساب</button>
+<div id="byLine">By Rayane | Version V12 PRO</div>
+</div>
+
+<!-- Register Box -->
+<div class="box" id="registerBox" style="display:none;">
+<h1>Programmer Shop V12 PRO</h1>
+<h2>تسجيل حساب جديد</h2>
+<div class="input-box"><input type="text" id="regUsername" placeholder="اسم المستخدم"></div>
+<div class="input-box"><input type="password" id="regPassword" placeholder="كلمة المرور"></div>
+<button onclick="register()">تسجيل</button>
+<div id="regMsg"></div>
+<p>لديك حساب؟ <a href="#" onclick="showLogin()">تسجيل الدخول</a></p>
+<div id="byLine">By Rayane | Version V12 PRO</div>
+</div>
+
+<!-- Login Box -->
+<div class="box" id="loginBox" style="display:none;">
+<h1>Programmer Shop V12 PRO</h1>
+<h2>تسجيل الدخول</h2>
+<div class="input-box"><input type="text" id="loginUsername" placeholder="اسم المستخدم"></div>
+<div class="input-box"><input type="password" id="loginPassword" placeholder="كلمة المرور"></div>
+<button onclick="login()">دخول</button>
+<div id="loginMsg"></div>
+<p>ليس لديك حساب؟ <a href="#" onclick="showRegister()">تسجيل جديد</a></p>
+<div id="byLine">By Rayane | Version V12 PRO</div>
+</div>
+
+<!-- Dashboard Box -->
+<div class="box" id="dashboardBox" style="display:none;">
+<h1>Programmer Shop V12 PRO</h1>
+<h2>لوحة التحكم</h2>
+<p id="welcomeUser"></p>
+<button onclick="logout()">تسجيل الخروج</button>
+
+<div id="userSettings"></div>
+
+<h3>إدارة المنتجات (Owner فقط)</h3>
+<div id="productsBox"></div>
+<div class="input-box" id="addProductBox" style="display:none;">
+<input type="text" id="newProductName" placeholder="أدخل اسم المنتج الجديد">
+<button onclick="addProduct()">إضافة منتج</button>
+</div>
+
+<h3>طلبات المنتجات</h3>
+<div id="ordersBox"></div>
+
+<h3>Ticket Support</h3>
+<div id="ticketsBox"></div>
+
+<div id="byLine">By Rayane | Version V12 PRO</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
